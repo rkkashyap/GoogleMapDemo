@@ -1,0 +1,46 @@
+<h2>Template From Demo</h2>
+<form class="form-horizontal" #form1="ngForm" (submit)="logForm(form1.value)">
+    <div class="form-group">
+        <label>FirstName: </label>
+        <input type="text" class="form-control" name="firstname" ngModel>
+    </div>
+    <div class="form-group">
+        <label>LastName: </label>
+        <input type="text" class="form-control" name="lastname" ngModel>
+    </div>
+    <fieldset ngModelGroup="address">
+        <div class="form-group">
+            <label>City: </label>
+            <input type="text" class="form-control" name="city" ngModel>
+        </div>
+        <div class="form-group">
+            <label>Zip: </label>
+            <input type="text" class="form-control" name="zip" ngModel>
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+<!--<form class="form-horizontal" #form1="ngForm" (submit)="logForm(form1.value)">
+    <div class="form-group">
+        <label>FirstName: </label>
+        <input type="text" class="form-control" name="firstname" ngModel>
+    </div>
+    <div class="form-group">
+        <label>LastName: </label>
+        <input type="text" class="form-control" name="lastname" ngModel>
+    </div>
+    <div class="form-group">
+        <label>City: </label>
+        <input type="text" class="form-control" name="city" ngModel>
+    </div>
+    <div class="form-group">
+        <label>Zip: </label>
+        <input type="text" class="form-control" name="zip" ngModel>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>-->
